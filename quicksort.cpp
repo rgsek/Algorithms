@@ -1,21 +1,24 @@
-// Author: Gnanasekar Rajakumar
+/*
+ * Copyright 2019
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Gnanasekar Rajakumar (gnanasekar.r29@gmail.com)
+ */
 
 #include <iostream>
 
 using namespace std;
-
-#if 0
-void swap(_Ty& _Left, _Ty& _Right)
-{	// exchange values stored at _Left and _Right
-    if (&_Left != &_Right)
-    {	// different, worth swapping
-        _Ty _Tmp = _Left;
-
-        _Left = _Right;
-        _Right = _Tmp;
-    }
-}
-#endif
 
 // Perform the following,
 // 1. Pick the end element as pivot
