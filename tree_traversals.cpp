@@ -112,8 +112,8 @@ void BT::preorder(node* root)
     if (root)
     {
         cout << root->m_key << " ";
-        inorder(root->m_left);
-        inorder(root->m_right);
+        preorder(root->m_left);
+        preorder(root->m_right);
     }
 }
 
@@ -122,8 +122,8 @@ void BT::postorder(node* root)
 {
     if (root)
     {
-        inorder(root->m_left);
-        inorder(root->m_right);
+        postorder(root->m_left);
+        postorder(root->m_right);
         cout << root->m_key << " ";
     }
 }
@@ -156,11 +156,11 @@ int main(int argc, char** argv)
     binaryTree.inorder(binaryTree.get_root());
     cout << endl;
 
-    cout << "Postorder " << endl;
+    cout << "Preorder " << endl;
     binaryTree.preorder(binaryTree.get_root());
     cout << endl;
 
-    cout << "Preorder " << endl;
+    cout << "Postorder " << endl;
     binaryTree.postorder(binaryTree.get_root());
     cout << endl;
 
