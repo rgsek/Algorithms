@@ -63,6 +63,7 @@ Graph::Graph(int vertices)
     m_edges = new list<int>[vertices];
     m_vertices = vertices;
 }
+
 // Key to bfs is that the immediate adjacent node has to be visted first. So traversal happens
 // level by level. Queue is the key data structure here as it allows us to enqueue vertices at
 // each level and pop them in the same order

@@ -26,7 +26,7 @@ class node
 {
 public:
     node();
-    node::node(int key, node* left, node* right);
+    node(int key, node* left, node* right);
     
     node* m_left;
     node* m_right;

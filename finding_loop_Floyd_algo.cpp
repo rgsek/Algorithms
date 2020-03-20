@@ -22,7 +22,7 @@ using namespace std;
 
 class Node {
 public:
-    class Node(int data);
+    Node(int data);
     Node* get_next();
     void set_next(Node* next);
     unsigned char get_data();
@@ -75,6 +75,7 @@ void check_and_remove_loop(Node* head)
     if (slow != fast)
     {
         cout << " No loop seen " << endl;
+	return;
     }
 
     // Loop is seen. Now find the starting of the loop and remove it
